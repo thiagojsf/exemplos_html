@@ -11,17 +11,23 @@
         <input type="color" />
         <input type="range" />
         <label><input type="checkbox" />Marcar</label>
-        <input type="radio" name="dfhjsdg" id="rndSim" /> 
-        <label for="rndSim">Sim</label> 
-        <label><input type="radio" name="dfhjsdg"  />Não</label>
-        <input type="tel" placeholder="Tel" />
-        <input type="email" placeholder="E-mail" />
-        <input type="search" placeholder="Pesquisa" />
-        <input type="url" placeholder="Url" />
-        <input type="button" value="Clique aqui" />
-        <textarea>
+        <fieldset>
+            <legend>Escolha</legend>
+            <input type="radio" name="dfhjsdg" id="rndSim" /> 
+            <label for="rndSim">Sim</label> 
+            <label><input type="radio" name="dfhjsdg"  />Não</label>
+        </fieldset>
+        <form action="https://google.com" method="GET">
+            <input type="tel" placeholder="Tel" name="Telefone" />
+            <input type="email" placeholder="E-mail" name="email" />
+            <input type="search" placeholder="Pesquisa" />
+            <input type="url" placeholder="Url" />
+            <input type="button" value="Clique aqui" />
+            <textarea>
 
-        </textarea>
+            </textarea>
+            <input type="submit" value="Enviar" />
+        </form>
         <select>
             <option>Sim</option>
             <option>Não</option>
@@ -61,10 +67,10 @@
                 </tr>
                 <tr>
                     <td rowspan="2">3</td>
-                    <td>Neymar Pletsch</td>
+                    <td>Grêmio</td>
                 </tr>
                 <tr>
-                    <td>Neymar Pletsch</td>
+                    <td>Internacional</td>
                 </tr>
             </tbody>
         </table>
