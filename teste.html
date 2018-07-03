@@ -4,24 +4,44 @@
         <title>Linx Porto Alegre</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
+            button {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            #divDesfazer {
+                background-color: purple;
+            }
+            div {
+                background-color: yellow;
+            }
+            .col {
+                background-color: lightcoral;
+            }
             
         </style>
     </head>
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-md-6" style="background-color: red; color: pink">
-                    <button>Desfazer</button>
+                <div class="col-6 col-md-4 col-lg-2 offset-lg-4" id="divDesfazer">
+                    <button class="btn col">Desfazer</button>
                 </div>
-                <div class="col-md-6" style="background-color: green">
-                    <button>Salvar</button>
+                <div class="col-6 col-md-4 col-lg-2 order-4" title="Salva o processo-">
+                    <button class="btn col">Salvar</button>
                 </div>
-                <div class="col-6" style="background-color: burlywood">3</div>
-                <div class="col-6" style="background-color: burlywood">4</div>
+                <div class="col-6 col-md-4 col-lg-2 order-4">
+                        <button class="col btn btn-primary">Ok</button>
+                    </div>
+                <div class="col-12 col-md-4 col-lg-4 order-1" style="background-color: burlywood">
+                    <a>Esqueceu sua senha clique aqui para recuperar</a>
+                </div>
             </div>
         </div>
+        <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+<div class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow</div>
+<div class="shadow p-3 mb-5 bg-white rounded">Regular shadow</div>
+<div class="shadow-lg p-3 mb-5 bg-white rounded">Larger shadow</div>
         <div style="color: red">Linx software que move o <span  style="font-weight: bold; color: pink">varejo</span></div><div>Totvs</div>
         <input type="text" placeholder="Texto" />
         <input type="number" placeholder="N&uacute;mero" />
