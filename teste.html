@@ -25,6 +25,7 @@
             
         </style>
         <script>
+            "use scrict";
             function teste(){
                 var clientes = [
                     {nome: "Pletsch", saldo: 3000000000, conta: 1000},
@@ -34,19 +35,29 @@
                 for(var i = 0; i < clientes.length; i++ ){
                     (function(cliente){
                         setTimeout (function(){
-                            processarContas(clientes[i]);
+                            //processarContas(clientes[i]);
                         }, 3000);
                     })(clientes[i]);                        
                 }
 
                 for(let i = 0; i < clientes.length; i++ ){
                     setTimeout (function(){
-                        processarContas(clientes[i]);
+                        //processarContas(clientes[i]);
                     }, 3000);                     
                 }
-                console.log(a);
-                console.log(b);
+
+                function b(){
+                    return null;
+                }
+
+                try {
+                    eval("var x = 0");
+                    u = pessoa.teste.teste;
+                } catch(ex) {
+
+                }
             }
+            teste();
         </script>
     </head>
     <body>
@@ -71,7 +82,7 @@
 <div class="shadow p-3 mb-5 bg-white rounded">Regular shadow</div>
 <div class="shadow-lg p-3 mb-5 bg-white rounded">Larger shadow</div>
         <div style="color: red">Linx software que move o <span  style="font-weight: bold; color: pink">varejo</span></div><div>Totvs</div>
-        <input type="text" placeholder="Texto" />
+        <input type="text" placeholder="Texto" id="txtTexto" />
         <input type="number" placeholder="N&uacute;mero" />
         <input type="datetime-local" />
         <input type="color" />
