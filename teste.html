@@ -5,12 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
         <style>
             button {
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             }
             #divDesfazer {
                 background-color: purple;
+            }
+            div {
+                font-family: 'Wendy One', sans-serif;
             }
             div:hover {
                 background-color: yellow;
@@ -20,18 +24,42 @@
             }
             
         </style>
+        <script>
+            function teste(){
+                var clientes = [
+                    {nome: "Pletsch", saldo: 3000000000, conta: 1000},
+                    {nome: "Perfeito", saldo: 500, conta: 200}
+                ];
+
+                for(var i = 0; i < clientes.length; i++ ){
+                    (function(cliente){
+                        setTimeout (function(){
+                            processarContas(clientes[i]);
+                        }, 3000);
+                    })(clientes[i]);                        
+                }
+
+                for(let i = 0; i < clientes.length; i++ ){
+                    setTimeout (function(){
+                        processarContas(clientes[i]);
+                    }, 3000);                     
+                }
+                console.log(a);
+                console.log(b);
+            }
+        </script>
     </head>
     <body>
         <div class="container">
             <div class="row">
                 <div class="col-6 col-md-4 col-lg-2 offset-lg-4" id="divDesfazer">
-                    <button class="btn col">Desfazer</button>
+                    <button class="btn col" style="opacity: 0.1;">Desfazer</button>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2 order-4" title="Salva o processo-">
                     <button class="btn col">Salvar</button>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2 order-4">
-                        <button class="col btn btn-primary">Ok</button>
+                        <button class="col btn btn-primary" style=" font-family: 'Wendy One', sans-serif;">привет</button>
                     </div>
                 <div class="col-12 col-md-4 col-lg-4 order-1" style="background-color: burlywood">
                     <a>Esqueceu sua senha clique aqui para recuperar</a>
